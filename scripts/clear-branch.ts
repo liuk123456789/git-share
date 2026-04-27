@@ -47,7 +47,7 @@ function getDefaultBaseBranch(): string {
     return remoteHead;
   }
 
-  for (const candidate of ['origin/main', 'origin/master', 'origin/develop']) {
+  for (const candidate of ['origin/main', 'origin/master', 'origin/develop','origin/test','origin/pre','origin/prod','origin/dev','origin/release']) {
     if (run(`git rev-parse --verify ${candidate}`)) {
       return candidate;
     }
