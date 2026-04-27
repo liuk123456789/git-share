@@ -1,0 +1,17 @@
+{
+  "name": "git-clean-branch",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "clean": "ts-node scripts/clear-branch.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^22.19.17",
+    "ts-node": "^10.9.2",
+    "typescript": "5.6.3"
+  },
+  "dependencies": {
+    "@inquirer/checkbox": "^4.1.0",
+    "@inquirer/confirm": "^5.1.0"
+  }
+}
